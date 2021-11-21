@@ -1,0 +1,15 @@
+{
+    "name": "lacusi/cf_widget",
+    "authors": [
+        {
+            "name": "Laszlo Fazekas",
+            "email": "thebojda@gmail.com"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^4.4",
+        "sc0vu/web3.php": "^0.1.4",
+        "intervention/image": "^2.7",
+        "guzzlehttp/promises": "^1.5"
+    }
+}
