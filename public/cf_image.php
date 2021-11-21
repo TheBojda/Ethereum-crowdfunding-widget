@@ -48,7 +48,7 @@ $result = (new PngWriter())->write($qrCode);
 $image = Image::canvas(200, 270, '#aaaaaa');
 $image->insert($result->getDataUri(), "top-left", 10, 10);
 $image->text(
-    'Send me some ETH',
+    TEXT,
     10,
     210,
     function ($font) {
@@ -58,7 +58,7 @@ $image->text(
     }
 );
 $image->text(
-    number_format($balance / 10 ** 18, 2) . " ETH" . ' / ' . number_format(TARGET_VALUE / 10 ** 18, 2) . ' ETH',
+    number_format($balance / 10 ** 18, 2) . " " . SYMBOL . ' / ' . number_format(TARGET_VALUE / 10 ** 18, 2) . ' ' . SYMBOL,
     10,
     230,
     function ($font) {
